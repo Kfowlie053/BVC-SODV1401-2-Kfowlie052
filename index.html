@@ -1,0 +1,134 @@
+<!-- Shows the document type -->
+<!DOCTYPE html>
+
+<!-- Meta data indicating code Language, Charset,
+ proper rendering in internet edge,
+ ensures the website looks good on any device -->
+<head>
+    <html lang="en">   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beginner website about Alberta trails as a school project.">
+    <meta name="author" content="Kyle Fowlie">
+    <link rel=”canonical” href="https://www.ExploreAlbertaTrails.com" />
+    <meta property="og:type" contenet="article">
+    <meta property="og:title" content="Explore Alberta Trails">
+    <meta property="og:description" content="A beginner website about Alberta trails as a school project.">
+    <meta property="og:url" content="https://www.ExploreAlbertaTrails.com">
+    <meta property="og:image" content="Explore_Alberta_Trails.jpg">
+    <link rel="icon" type="image/x-icon" href="Explore_Alberta_Trails.jpg">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- links the CSS file to the HTML file-->
+<link rel="stylesheet" type="text/css"
+href="./cssStyle.css" media="screen">
+
+<!-- links the Javascript file to the HTML file-->
+<script src= "script.js" defer></script>
+
+<!-- Changes the words in the tab box -->
+<title>
+Explore Alberta Trails
+</title>
+
+<!-- Displays the Title at the top of the web page -->
+<h1 id="Explore_Alberta_Trails">Explore Alberta Trails</h1>
+
+<!-- Enables you to jump to a website heading -->
+<nav>
+    <h2>
+        <a href="#About">About</a> |
+        <a href="#Trails">Trails</a> |
+        <a href="#ContactUs">ContactUs</a> |
+        <a href="#FAQ">FAQ</a>|
+        <a href="#trailform">Trail Suggestion Form</a> |
+        <a href="#CalgaryWeather">Calgary map</a> |
+        <a href="#weather-map">Live Calgary Weather</a>
+     </h2>
+</nav>
+
+    <!-- Shows a picture on the web page -->
+    <img src="Explore_Alberta_Trails.jpg" alt="The text Explore Alberta Trails with a mountain and forest in the background">
+<!-- Start the About section -->
+<h2 id= "About">About</h2>
+    <B>Explore Alberta Trails empowers people to discover Alberta’s natural beauty through safe, and inspiring hiking experiences.</B>
+
+ <h2 id= "Trails">Trails</h2>
+     <B>Alberta has many Beautiful tails including.</B>
+    
+<!-- Allows naviagion to other sites -->
+<nav>
+    <a href="https://www.alltrails.com/trail/canada/alberta/glenmore-reservoir-loop-2">Glenmore Reservoir Loop</a> <br>
+    <a href="https://www.alltrails.com/trail/canada/alberta/discovery-ridge-and-john-simonot-trail-loop">Discovery Ridge and John Simonot Trail Loop</a> <br>
+    <a href="https://www.alltrails.com/trail/canada/alberta/bebo-grove-loop">Bebo Grove Loop</a>
+</nav>
+
+    <!-- Start of the ContactUs Section -->
+<h2 id= "ContactUs">Contact Us</h2>
+        <B>To get in toutch with a representitive of Alverta Trails; call or email us at.<br>
+        Phone: (403)-111-1111 <br>
+        E-mail:<a href=Contact@AlbertaTrails.ca>Contact@AlbertaTrails.ca</a>
+        </B>
+
+<!-- Start of the FAQ section -->
+<h2 id= "FAQ">Frequently Asked Questions</h2>
+         <!-- Changes size and color of body text -->
+        <B>What is this website? <br>
+        It is a website recomending hiking trails in alberta.<br>
+        Why are there so few trails? <br>
+        Becuse i have only been to a few trails.</B>
+ 
+<!-- form to request a suggestion trail -->
+<h2 id= "TrailForm">Trail Suggestion Form</h2>
+    <form id="trailform" name="trailform" method="post" autocomplete="on">
+    
+        <!-- name (required) is human readable, required tag is used to restrict usage of the submit button -->
+  <label for="name">name (required):</label><br>
+  <input type="text" name="name"  id="name" placeholder="Your name here" required><br>
+  <small>Format: Name</small><br>
+  <label for="email"  >email (required):</label><br>
+  <input type="email" name="email" id="email" placeholder="Your@email.here" required><br>
+  <small>Format: Your@email.here </small><br>
+  <label for="trail-length">trail-length:</label><br>
+  <select name="trail-length" id="trail-length">
+    <option value="Short">Short</option>
+    <option value="Medium">Medium</option>
+    <option value="Long">Long</option>
+  </select> <br>
+  <label for="MessageText">message text area:</label><br>
+  <textarea rows="6" cols="40" name="MessageText"  id="MessageText" placeholder="Anything else you want to tell us"></textarea><br>
+  <small>Format: your message here</small><br>
+  <button type="submit" id="submit">submit</button>
+</form>
+
+<h2>Calgary Map</h2>
+
+
+<iframe src="https://maps.open-meteo.com/0#9.42/50.9669/-113.9906&model=best_match&variable=temperature_2m" 
+ style="height:900px;width:800px; pointer-events: none;" title="Map of Calgary" async ></iframe>
+
+<h2 id= "CalgaryWeather">Calgary Weather</h2>
+
+<!-- Shows imported weather infromation from https://wttr.in/Calgary -->
+<img id="weather-map" alt="The current weather in Calgary, Alberta" src="weather-map">
+
+
+
+
+
+    <!-- Enables you ot jump to a website heading -->
+<nav>
+    <h2>
+        <a href="#About">About</a> |
+        <a href="#Trails">Trails</a> |
+        <a href="#ContactUs">ContactUs</a> |
+        <a href="#FAQ">FAQ</a> |
+        <a href="#trailform">Trail Suggestion Form</a> |
+        <a href="#CalgaryWeather">Calgary map</a> |
+        <a href="#weather-map">Live Calgary Weather</a>
+        </h2>
+</nav>
+</html>
